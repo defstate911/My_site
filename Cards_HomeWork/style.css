@@ -1,0 +1,65 @@
+body {
+    background-color: #D8BFD8;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* Распределяет карточки с равными отступами */
+    /*justify-content: center; /* Центрирование карточек */
+    /*flex-wrap: wrap; /* Чтобы карточки переносились на новую строку, если не умещаются */
+    max-width: 1300px; /* Максимальная ширина контейнера для трех карточек в ряд */
+    margin: 0 auto; /* Центрирует контейнер на странице */
+}
+
+.card{
+   width: 400px;
+   height: 540px;
+   background-color: #18ffb7;
+   border-radius: 60px;
+   padding: 10px;
+   margin: 10px;
+   transition: transform 0.3s ease, background-color 0.3s ease; /* Плавный переход */
+}
+
+/* Эффект при наведении */
+.card:hover {
+    transform: scale(1.05); /* Увеличение карточки на 5% */
+    background-color: #7FFFD4; /* Изменение цвета фона */
+}
+
+.photo {
+   height: 40%;
+   padding: 40px;
+}
+.info {
+   height: 40%;
+   padding: 20px;
+}
+img {
+   position: relative;
+   left:10%;
+   border-radius: 20px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    color: #483D8B; /* Исходный цвет */
+    font-size: 20px; /* Исходный размер */
+    text-decoration: none; /* Убирает подчеркивание */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Анимация для плавного перехода */
+}
+
+a:hover {
+    color: #9932CC; /* Цвет при наведении */
+    font-size: 25px; /* Увеличенный размер при наведении */
+}
+h1{
+    color: #2F4F4F;
+}
+p{
+    color: #2F4F4F;
+    font-size: 18px;
+    font-family: URW Chancery L, cursive; /*названия семейства шрифта*/
+    font-weight: 900; /*толщина шрифта*/
+    text-align: center;
+}
